@@ -1,0 +1,14 @@
+<!-- Kế thứa thành layout base.html-->
+{% extends 'base.html' %}
+<!-- Phần nội dung hiển thị-->
+{% block content %}
+
+    <center>
+        <form action="." method="POST">
+            {% csrf_token %}  <!--- Tạo bảo mật tránh kĩ thuật tấn công -->
+            {{form.as_p}}
+            <input type="submit" value="Đăng ký">
+        </form>
+    </center>
+
+{% endblock %}

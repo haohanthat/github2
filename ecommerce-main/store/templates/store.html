@@ -1,0 +1,42 @@
+<!-- Kế thứa thành layout base.html-->
+{% extends 'base.html' %}
+<!-- Phần nội dung hiển thị-->
+{% block content %}
+    <div class = 'container'>
+        <div class = 'row'>
+            
+            <div class = 'col-md-4 col-lg-4'>
+            <div class="card" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Template</h3>
+                    <h4 class="card-text">Template</h4>
+                    <a  class="btn btn-primary addtocart" data-action = "add" data-product = " "">Add to Cart</a>
+                </div>
+                </div>
+            </div>
+
+            <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 18rem;">
+                    <img src="" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h3 class="card-title">Template</h3>
+                    <h4 class="card-text">Template</h4>
+                    <a  class="btn btn-primary addtocart" data-action = "add" data-product = " "">Add to Cart</a>
+                    </div>
+                </div>
+            </div>  
+
+            <div class = 'col-md-4 col-lg-4'>
+            <div class="card" style="width: 18rem;">
+                <img src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Template</h3>
+                    <h4 class="card-text">Template</h4>
+                    <a  class="btn btn-primary addtocart" data-action = "add" data-product = " "">Add to Cart</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
